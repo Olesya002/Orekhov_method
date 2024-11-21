@@ -103,7 +103,7 @@ class Hierarchical_clustering():
             print(f'{i} cluster: {list(self.labels[self.predicted_labels == i])}')
 
 '''Upload data'''
-data_2020 = pd.read_excel('D:\ВКР\main_data.xlsx', sheet_name='2020', usecols=list(range(0,7)))
+data_2020 = pd.read_excel('dataset_path', sheet_name='2020', usecols=list(range(0,7)))
 data_2020.columns = ['subject', 'VRP', 'INVEST', 'FUNDS', 'COEFF', 'RESEARCH', 'PRODUCT']
 
 '''Applying the method'''
